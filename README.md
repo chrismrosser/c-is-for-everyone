@@ -2,7 +2,7 @@
 
 **Jan 10th 2024**
 
-## Chapter 1  
+## Chapter 1 Introduction 
 
 ### 1.1 What is programming?  
 
@@ -42,7 +42,28 @@ Compile time error
 Run time error
 - An erorr that causes a program ot take an action that the programmer did not intend.  
 
+
+**Jan 11th 2024**  
+  
 ### 1.7 Problem solving: algorithm design
 
+A squence of steps that is unambiguous, executable and terminating is called an *algorithm*  
+  
+## Chapter 2 Fundamental data types
+  
+### 2.1 Variables
+  
+A variable is a storage location with a name.
+  
+#### 2.1.1(2) Variable Definitions and number types
+  
+int and double 
+- int is a whole number a negitive number and zero
+    - int cans_per_pack= 6;
+- double is decimal or part number as well as intergers and exponential notations
+    - double can_volume = 0.355
+>review assignments
+> better understanding of what is scope
 
+*See progam var in folder var in the github.*
 
