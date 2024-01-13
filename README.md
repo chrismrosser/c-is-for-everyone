@@ -62,8 +62,15 @@ int and double
     - int cans_per_pack= 6;
 - double is decimal or part number as well as intergers and exponential notations
     - double can_volume = 0.355
->review assignments
+>review assignments  
+  
 > better understanding of what is scope
 
 *See progam var in folder var in the github.*
+
+# Exsample of push
+
+> showing how a push works
+
+
 
