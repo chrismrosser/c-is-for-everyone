@@ -68,9 +68,47 @@ int and double
 
 *See progam var in folder var in the github.*
 
-# Exsample of push
+### 2.2 Arithmetic
 
-> showing how a push works
+#### 2.2.1 Arithmetic Operators
+- +add 
+- -subtract
+- *multiply
+- /divide
 
+#### 2.2.2 Increment and decrement
+<++> adds one to an increment 
+<--> subtracts one to an increment
+
+### 2.3 Input and out put
+
+Today i took on a side quest and created a program that uses i/o as well as variables and cin funtions. ( see varibles2.cpp and shopping in the variables file). Over all the program worked very well and was able to funtion as designed allowing me to see that i have a basic understanding of the code in said project.
+  
+### 2.4 Problem solving 
+understanding an issue is made easier by understadning what needs to be done by hand first.. by taking a problem and simplifying it by hand you are able to create the simple algorithm that you will need to create the answer on the computer.  
+
+### 2.5 Strings
+a sequence of characters that allow you to work with charcters (see program initials in folder 2_variables )
+
+## Chapter 3 Decisions
+
+### 3.1 The if statement
+
+first explination of *if* will be found in (3_decisions folder file if.cpp) where we right a program that will take you to the right floor in an elevator assuming that one floor (13) is skipped.
+
+### 3.2 Comparing numbers and strings
+
+six types of Relational operators  
+    >  
+    >=  
+    <  
+    <=  
+    ==  
+    !=  
+### 3.3 Multiple alternatives
+
+in folder 3 under taxes.cpp you will see the use of multiple alternatives.  
+
+today in chapter 3 so far we have used the variables that we learned in chapter 2 as well as the cin >> funciton to create a workable program where we can plug in info and base on said info the program can choose what has to happen next basied on true false statements and the natural flow charts.  
 
 
