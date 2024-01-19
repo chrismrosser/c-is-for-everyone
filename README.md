@@ -111,4 +111,11 @@ in folder 3 under taxes.cpp you will see the use of multiple alternatives.
 
 today in chapter 3 so far we have used the variables that we learned in chapter 2 as well as the cin >> funciton to create a workable program where we can plug in info and base on said info the program can choose what has to happen next basied on true false statements and the natural flow charts.  
 
+### 3.5 flowcharts
+
+chaper three covered true false statments and how to write that into a program using flow chart like ideaology that brought a new way of interacting with said code. in program if.cpp we wrote directions for an elevator that had not only insturctions on how to run but rules on how to not run if given an input that was not possible (ERROR). 
+
+## Chapter 4 Loops
+
+looking into 4_loops you will find invest.cpp, that is our first intro into the world of loops. In chaper four things are getting a little more meaty. Deeper. and involed. Lets dive into the loops at hand and how to use them.  
 
