@@ -119,3 +119,52 @@ chaper three covered true false statments and how to write that into a program u
 
 looking into 4_loops you will find invest.cpp, that is our first intro into the world of loops. In chaper four things are getting a little more meaty. Deeper. and involed. Lets dive into the loops at hand and how to use them.  
 
+### The *While loop*
+  
+The while loop: while something is ture or false something else must occur until a point where that something is no longer true or false  
+  
+{  
+ double balance = 0; // defined variable out of the loop 
+  
+while (balance < TARGET) // stating that the loop will contuine until the dfined variavle (balance) is less than TARGET
+    
+    {
+        year++;
+        double interest = balance * RATE / 100 
+        balance = balance + interest; 
+    }  
+}
+  
+The infinite loop **ERROR** if  a condtion never becomes false the loop will never end
+
+### The *For loop*
+
+The ffor loop: this loop is used when a value runs from a starting point to an ending point with a constant increment or decrement.
+
+>  counter = 1; // initialize the counter  
+    while (counter <= 10) //  check the counter  
+    {  
+        cout << counter << endl;  
+        counter++;   // update the counter  
+    }  
+
+
+### The *Do loop*
+
+The do loop: this loop is appropriate whenthe loop body must be executed at least once
+
+> do  
+{  
+   statments     
+}  
+while (codition);
+  
+also refered to as teh post-test loop becasue the condition is tested after completing the loop body ( using cin >> value )  
+
+>int value:  
+do  
+{  
+    cout << "Enter a value < 100: ";  
+    cin >> value;  
+}  
+while (value is >= 100);
