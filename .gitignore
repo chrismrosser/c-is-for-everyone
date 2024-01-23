@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.0  
 *.a  
@@ -13,3 +14,7 @@
 build/
 bin/
 tmp/
+=======
+4_loops/invest
+4_loops/div
+>>>>>>> 8d746c2c4f02592d75982561e9fc2b741be19214
