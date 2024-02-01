@@ -1,28 +1,26 @@
-<<<<<<< HEAD
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.0  
-*.a  
-*.so  
-*.lib  
+*.0
+*.a
+*.so
+*.lib
 *.dll
 
-
-#Executables
-*.exe 
+# Executables
+*.exe
 *.out
- 
+
 # Build and temp files
 build/
 bin/
 tmp/
-=======
+bash/
+
+# Your project-specific patterns
 1_hello/hw
 2_variables/initials
 2_variables/shoppping
-2_variables/2_variables
+2_variables/variables
 3_decisions/if
 3_decisions/taxs
 4_loops/invest
 4_loops/div
-
->>>>>>> 8d746c2c4f02592d75982561e9fc2b741be19214
