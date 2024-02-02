@@ -40,12 +40,14 @@ int main()
         return 0;
      }
      else
-     {
-        cout << "Anwer Me!\n\n";
-     }   
-    
+     { 
+        do{
+          cout << "Anwer Me!\n\n";
+          cin >> answer;
+          }
+       while (!(answer == 'y' || answer == 'Y' || answer == 'n' || answer == 'N'));
+     }
 
-    cout << "Great News!\n";
     cout << "Lets get started then.\n\n";
 
 
@@ -55,7 +57,7 @@ int main()
     do {
 
         cout << "Lets get you a side kick.. you have a few options\n";
-        cout << "You can pick a Dog, Cat or Bird.\n";
+        cout << "You can pick a Dog, Cat or Bird.\n\n";
         cout <<"What will you chose?";
         cin >> sidekick;
 
@@ -70,7 +72,7 @@ int main()
                 cout << "You chose a cat!\n";
                 break;
             case 'b':
-                cout << "You choose a bird!\n";
+                cout << "You chose a bird!\n";
                 break;
             default:
                 cout << "Not an option - Select a dog, cat or bird... \n";
@@ -93,8 +95,5 @@ int main()
      cout << "Ready for all the perals that lay ahead of them\n\n";
 
 
-
-
-    
     return 0;
 }

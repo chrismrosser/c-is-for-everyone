@@ -168,3 +168,8 @@ do
     cin >> value;  
 }  
 while (value is >= 100);
+
+## Chaper 5 Funtions
+A sequence of instructions with a name.  
+*see 5_functions/cube.cpp  
+
