@@ -1,27 +1,8 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.0
-*.a
-*.so
-*.lib
-*.dll
+# Exclude Compiled Object files
+*.o
+*.obj
 
-# Executables
+# Exclude Executables
 *.exe
 *.out
-
-# Build and temp files
-build/
-bin/
-tmp/
-bash/
-
-# Your project-specific patterns
-1_hello/hw
-2_variables/initials
-2_variables/shoppping
-2_variables/variables
-3_decisions/if
-3_decisions/taxs
-4_loops/invest
-4_loops/div
-C++/adventure
+*.app
