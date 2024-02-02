@@ -6,3 +6,9 @@
 *.exe
 *.out
 *.app
+
+
+*2_variables/shop
+*4_loops/invest
+*5_functions/
+*adventure
