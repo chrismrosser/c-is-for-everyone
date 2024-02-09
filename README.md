@@ -159,7 +159,7 @@ The do loop: this loop is appropriate whenthe loop body must be executed at leas
 }  
 while (codition);
   
-also refered to as teh post-test loop becasue the condition is tested after completing the loop body ( using cin >> value )  
+also refered to as the post-test loop becasue the condition is tested after completing the loop body ( using cin >> value )  
 
 >int value:  
 do  
@@ -169,7 +169,18 @@ do
 }  
 while (value is >= 100);
 
-## Chaper 5 Funtions
+## Chapter 5 Funtions
 A sequence of instructions with a name.  
 *see 5_functions/cube.cpp  
 
+### parts of funtions
+
+    - Name for the funciton   
+    - A variable for each argument
+    - and a type for the result
+
+  
+
+
+
+## Chapter 6 

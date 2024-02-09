@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <random>
 
 using namespace std;
 
 int main()
 {
     // test project to see what I can come up with on my own... good luck me
-
+ 
     std::string username;
     
 
@@ -33,8 +34,7 @@ int main()
      if (answer == 'y' || answer == 'Y')
      {
         cout << "Onward!\n\n";
-     }   
-        
+     }      
      else if (answer == 'n' || answer == 'N')
      {   cout << "TRATOR!\n\n";
         return 0;
@@ -93,7 +93,109 @@ int main()
 
      cout << "So " << username << " and " << petname << " are on their way\n";
      cout << "Ready for all the perals that lay ahead of them\n\n";
+     cout << "Okay, " << username << " it is important that you know this... \n";
+     cout << "Any follys and you and " << petname << " will be sent back to the start \n";
+     
+     char understand;
+     cout << "Do you understand?";
+     cin >> understand;
+
+     if (understand == 'y' || understand == 'Y')
+     {
+        cout << "Very well time for the first task!\n\n";
+     }      
+     else if (understand == 'n' || understand == 'N')
+     {   cout << "YOU HAVE DIED!\n\n";
+        return 0;
+     }
+     else
+     { 
+        do{
+          cout << "Anwer Me!\n\n";
+          cin >> understand;
+          }
+       while (!(understand == 'y' || understand == 'Y' || understand == 'n' || understand == 'N'));
+     }
 
 
+// game of chance
+
+    cout << "Right then, let us play a little game of chance.\n\n";  
+    
+    cout << "Your fist task is a guessing game. You have three atempts to guess the number from 1-5. \n";
+    cout << "Get it wrong and its DEATH for you and " << petname << " !\n";
+
+    
+    random_device rd;
+    mt19937 generator(rd());
+
+    uniform_int_distribution<int> distribution(1, 5);
+
+    int target_number = distribution(generator);
+    const int max_guesses = 3;
+
+    cout << "Welcome to your task! Guess the number between 1 and 5.\nGuess correct to stay alive\n";
+
+    for(int attempt = 1; attempt <= max_guesses; ++attempt) 
+    {
+        int guess;
+        cout << endl;
+      cout << "Guess #" << attempt << ": \n";
+        while (!(cin >> guess)) {
+            cin.clear(); 
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');  
+            cout << "Please enter a number.\n";
+        } 
+
+        if (guess == target_number) {
+            cout << "Congratulations! You guessed the correct number.\n"; 
+            break;
+        } else {
+            cout << "Incorrect guess. Try again.\n"; 
+            if (attempt == max_guesses) {
+                cout << "Falure... you and "<< petname << " have died.\n";
+                return 0;
+            }
+        }
+    }
+
+   
+    cout << "The correct number was: " << target_number << "\n\n";
+
+    // riddle task
+
+    string riddle;
+   do{ 
+        cout << "This task will require you to use your mind...\n";
+        cout << "To move on " << username << " answer this riddle, fail and lose...\n\n";
+        cout << "Your riddle is: What has keys but cannot open locks????? \n";
+
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        getline(cin, riddle);
+        transform(riddle.begin(), riddle.end(), riddle.begin(), ::tolower);
+
+        if (riddle == "a piano" || riddle == "piano") 
+        {
+          cout << "You LIVE to see another day!\n\n";
+          break;  
+        }      
+        else
+        { cout << "You Have Failed!\nWould you like to try again? (y/n)\n";
+            char tryagain;
+            cin >> tryagain;
+
+         if(tryagain != 'y' && tryagain != 'Y') {
+            cout << "Quitter... leave my sight... \n";
+            return 0;
+        }
+         else {
+            cout << "Lets give it another go!\n\n";
+        }
+       } 
+     } while (true);
+
+    cout << "Truly amaizng " << username << " keep up the great work!\n";
+
+ 
     return 0;
 }
