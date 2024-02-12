@@ -15,7 +15,8 @@ int main()
     cout <<"Hello user... \n\n";
     cout <<"Who is joining us today on our adventure...? \n";
     cout << "User Name: ";
-    cin >> username;
+    // cin >> username;
+    std::getline(cin, username);
     cout << "Welcome " << username << " lets begin... \n\n";
 
     // opening over
@@ -25,17 +26,19 @@ int main()
     
     // continue journey
 
-    char answer;
+    // char answer;
+    string answer;
     
     cout << "Are you ready " << username << " ?\n";
     cout << "y for yes & n to exit like a scared baby...\n\n";
-    cin >> answer;
+    std::getline(cin, answer);
+    // cin >> answer;
 
-     if (answer == 'y' || answer == 'Y')
+     if (answer[0] == 'y' || answer[0] == 'Y')
      {
         cout << "Onward!\n\n";
      }      
-     else if (answer == 'n' || answer == 'N')
+     else if (answer[0] == 'n' || answer[0] == 'N')
      {   cout << "TRATOR!\n\n";
         return 0;
      }
@@ -43,9 +46,10 @@ int main()
      { 
         do{
           cout << "Anwer Me!\n\n";
-          cin >> answer;
+          getline(cin, answer);
+        //   cin >> answer;
           }
-       while (!(answer == 'y' || answer == 'Y' || answer == 'n' || answer == 'N'));
+       while (!(answer[0] == 'y' || answer[0] == 'Y' || answer[0] == 'n' || answer[0] == 'N'));
      }
 
     cout << "Lets get started then.\n\n";
@@ -59,8 +63,9 @@ int main()
         cout << "Lets get you a side kick.. you have a few options\n";
         cout << "You can pick a Dog, Cat or Bird.\n\n";
         cout <<"What will you chose?";
-        cin >> sidekick;
-
+        getline(cin, sidekick);
+        // cin >> sidekick;
+        
         transform(sidekick.begin(), sidekick.end(), sidekick.begin(), ::tolower);
 
         switch (sidekick[0])
@@ -86,7 +91,10 @@ int main()
 
     cout << "Wonderful pick " << pet << " a strong and loving animal!\n\n";
     cout << "What will we name them?\n";
-    cin >> petname;
+    // cin >> petname;
+    // cin.getline(petname, 100, "\n");
+    // cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    getline(cin, petname);
     cout << "WOW.." << petname << " very good name!\n\n";
      
      // adventure will begin now
@@ -96,15 +104,17 @@ int main()
      cout << "Okay, " << username << " it is important that you know this... \n";
      cout << "Any follys and you and " << petname << " will be sent back to the start \n";
      
-     char understand;
+    //  char understand;
+    string understand;
      cout << "Do you understand?";
-     cin >> understand;
+    //  cin >> understand;
+    getline(cin, understand);
 
-     if (understand == 'y' || understand == 'Y')
+     if (understand[0] == 'y' || understand[0] == 'Y')
      {
         cout << "Very well time for the first task!\n\n";
      }      
-     else if (understand == 'n' || understand == 'N')
+     else if (understand[0] == 'n' || understand[0] == 'N')
      {   cout << "YOU HAVE DIED!\n\n";
         return 0;
      }
@@ -112,9 +122,10 @@ int main()
      { 
         do{
           cout << "Anwer Me!\n\n";
-          cin >> understand;
+        //   cin >> understand;
+        getline(cin, understand);
           }
-       while (!(understand == 'y' || understand == 'Y' || understand == 'n' || understand == 'N'));
+       while (!(understand[0] == 'y' || understand[0] == 'Y' || understand[0] == 'n' || understand[0] == 'N'));
      }
 
 
@@ -140,12 +151,15 @@ int main()
     {
         int guess;
         cout << endl;
-      cout << "Guess #" << attempt << ": \n";
+        cout << "Guess #" << attempt << ": \n";
+
         while (!(cin >> guess)) {
             cin.clear(); 
             cin.ignore(numeric_limits<streamsize>::max(), '\n');  
             cout << "Please enter a number.\n";
         } 
+        cin.clear(); 
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');  
 
         if (guess == target_number) {
             cout << "Congratulations! You guessed the correct number.\n"; 
@@ -170,7 +184,7 @@ int main()
         cout << "To move on " << username << " answer this riddle, fail and lose...\n\n";
         cout << "Your riddle is: What has keys but cannot open locks????? \n";
 
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        fflush(stdin);
         getline(cin, riddle);
         transform(riddle.begin(), riddle.end(), riddle.begin(), ::tolower);
 
@@ -181,10 +195,11 @@ int main()
         }      
         else
         { cout << "You Have Failed!\nWould you like to try again? (y/n)\n";
-            char tryagain;
+            // char tryagain;
+            string tryagain;
             cin >> tryagain;
 
-         if(tryagain != 'y' && tryagain != 'Y') {
+         if(tryagain[0] != 'y' && tryagain[0] != 'Y') {
             cout << "Quitter... leave my sight... \n";
             return 0;
         }
