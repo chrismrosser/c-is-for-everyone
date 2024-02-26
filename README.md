@@ -183,4 +183,4 @@ A sequence of instructions with a name.
 
 
 
-## Chapter 6 
+## Chapter 6 # hotplate
